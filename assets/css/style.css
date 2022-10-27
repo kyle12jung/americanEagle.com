@@ -337,6 +337,7 @@ header {
   .navbar__mobile-newsletter-email-svg {
     left: -10px;
   }
+  
 }
 
 @media (min-width: 1024px) {
@@ -404,6 +405,18 @@ header {
 .navbar__cart-link-container {
 	position: relative;
 	margin: 0 15px;
+}
+
+.navbar__menu-button-container {
+  display: none;
+}
+
+@media(max-width: 1024px) {
+  .navbar__menu-button-container {
+    display: block;
+    width: 40px;
+    margin-left: 10px;
+  }
 }
 
 .navbar__inner-cart-container {
