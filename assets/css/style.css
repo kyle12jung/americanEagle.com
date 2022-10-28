@@ -382,7 +382,7 @@ header {
 }
 
 
-	.navbar__search {
+.navbar__search {
 	display: none;
 	}
 .signin-link-container {
@@ -412,11 +412,21 @@ header {
 }
 
 @media(max-width: 1024px) {
-  .navbar__menu-button-container {
-    display: block;
+  .navbar__menu-toggle-container {
+    display: inline;
     width: 40px;
     margin-left: 10px;
+    align-items: center;
+    margin-top: -15px;
   }
+  .navbar__menu-toggle-container button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+
+  
 }
 
 .navbar__inner-cart-container {
@@ -566,6 +576,24 @@ header {
 //////////////////HERO SECTION STYLES///////////////////////////
 ////////////////////////////////////////////////////////////////
 */
+
+.hero__arrow-left, .hero__arrow-right {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  position: absolute;
+  z-index: 10;
+  width: 39px;
+  background-color: #6495ED;
+  padding: 5px;
+}
+
+.hero__arrow-right {
+  transform: rotate(180deg);
+  margin-left: 97%;
+}
+
 .hero__carousel-slide {
 	position: relative;
 }
@@ -1546,6 +1574,51 @@ header {
 .footer__nav-list-store-hours:focus {
   text-decoration: underline;
   color: #6495ed;
+}
+
+.footer__nav-social-logo {
+  z-index: 10;
+}
+
+.footer__nav-social-links-facebook, .footer__nav-social-links-twitter, .footer__nav-social-links-instagram, .footer__nav-social-links-tiktok {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.footer__nav-social-links-background,
+.footer__nav-social-logo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer__nav-social-links-background {
+  width: 100px;
+}
+
+#facebook{
+  background-color: B8D1ED;
+}
+
+#twitter {
+  background-color: D5DC91;
+}
+
+#instagram {
+  background-color: FFCCCC;
+}
+
+#tiktok {
+  background-color: FFEFBC;
+}
+
+
+.footer__nav-social-links {
+  display: flex;
+  align-items: center;
 }
 
 .footer__copyright ul {

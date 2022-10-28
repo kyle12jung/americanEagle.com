@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="assets/css/normalize..css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
+    <script src="/assets/js/main.js" defer></script>
     <title>Beautiful Beginnings</title>
 </head>
 
@@ -52,10 +52,10 @@
                                     <img src="/assets/images/search.svg" alt="search">
                                 </a>
                             </div>
-                            <div class="navbar__menu-button-container">
-                                <a href="#" class="navbar__mobile-menu navbar__menu-svg">
+                            <div class="navbar__menu-toggle-container">
+                                <button class="navbar__mobile-toggle-svg">
                                     <img src="/assets/images/hamburger_menu.png" alt="open menu">
-                                </a>
+								</button>
                             </div>
                         </div>
                     </div>
@@ -133,8 +133,26 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero__carousel" id="hero__carousel">
-                <div class="hero__carousel-slide">
+            <div class="hero__carousel" id="hero__carousel" data-carousel>
+                <button class="hero__arrow-left" data-carousel-button="prev">
+					<img src="/assets/images/arrow.png" alt="go-to-previous-slide">
+				</button>
+                <button class="hero__arrow-right" data-carousel-button="next">
+					<img src="/assets/images/arrow.png" alt="go-to-next-slide">
+				</button>
+                <div class="hero__carousel-slide" data-slides>
+                    <div class="hero__carousel-img" data-active>
+                        <img src="assets/images/slide1.png" alt="" />
+                    </div>
+                    <div class="hero__carousel-img">
+                        <img src="assets/images/slide2.png" alt="" />
+                    </div>
+                    <div class="hero__carousel-img">
+                        <img src="assets/images/slide3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero__carousel-slide">
                     <div class="hero__carousel-img"><img src="assets/images/slide1.png" alt="" /></div>
                     <div class="hero__outter-text-container">
                         <div class="hero__inner-text-container">
@@ -151,9 +169,7 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
+ -->
 
         </section>
         <section class="products">
@@ -407,7 +423,30 @@
                                 <p class="footer__nav-list-item-num">1-708-245-1212</p>
                                 <a href="#" class="footer__nav-list-store-hours">Store Hours</a>
                                 <div class="footer__nav-social-links">
-
+                                    <div class="footer__nav-social-links-facebook">
+                                        <div class="footer__nav-social-links-background" id="backgroud-facebook"></div>
+                                        <a class="footer__nav-social-logo" id="facebook" href="">
+                                            <img id="facebook" src="/assets/images/facebook.svg" alt="facebook-link">
+                                        </a>
+                                    </div>
+                                    <div class="footer__nav-social-links-twitter">
+                                        <div class="footer__nav-social-links-background" id="backgroud-facebook"></div>
+                                        <a class="footer__nav-social-logo" id="twitter" href="">
+                                            <img id="twitter" src="/assets/images/twitter.svg" alt="twitter-link">
+                                        </a>
+                                    </div>
+                                    <div class="footer__nav-social-links-instagram">
+                                        <div class="footer__nav-social-links-background" id="backgroud-instagram"></div>
+                                        <a class="footer__nav-social-logo" id="instagram" href="">
+                                            <img id="instagram" src="/assets/images/instagram.svg" alt="instagram-link">
+                                        </a>
+                                    </div>
+                                    <div class="footer__nav-social-links-tiktok">
+                                        <div class="footer__nav-social-links-background" id="backgroud-tiktok"></div>
+                                        <a class="footer__nav-social-logo" id="tiktok" href="">
+                                            <img id="tiktok" src="/assets/images/tiktok.svg" alt="tiktok-link">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
