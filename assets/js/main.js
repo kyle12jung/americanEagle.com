@@ -26,7 +26,6 @@ buttons.forEach(button => {
 
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
-        console.log(activeSlide)
     })
 })
 
@@ -34,5 +33,5 @@ buttons.forEach(button => {
 const searchButton = document.querySelector('.navbar__search-svg');
 const searchBar = document.querySelector('.navbar__search');
 searchButton.addEventListener('click', () => {
-    searchBar.style.display = 'block';
+    searchBar.style.display = 'flex';
 })
