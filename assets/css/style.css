@@ -638,6 +638,28 @@ header {
   position: absolute;
 }
 
+@media (max-width: 1024px) {
+  #hero__carousel-mobile-slide {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero__carousel-mobile-slide > img {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+  }
+}
+
 .hero__carousel-img img {
   height: 200px;
   position: absolute;
@@ -727,13 +749,6 @@ header {
 .hero__arrow-left, .hero__arrow-right {
   display: none;
 }
-
-
-/* @media (max-width: 1024px) {
-	.hero {
-		display: absolute;
-	}
-} */
 
 
 @media (min-width: 768px) {
