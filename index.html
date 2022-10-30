@@ -140,12 +140,17 @@
                 <button class="hero__arrow-right" data-carousel-button="next">
 					<img src="/assets/images/arrow.png" alt="go-to-next-slide">
 				</button>
+                <div class="hero__carousel-navigational-dots" data-dots>
+                    <div class="hero__carousel-navigational-dot" id="dot-1" data-dot-active></div>
+                    <div class="hero__carousel-navigational-dot" id="dot-2"></div>
+                    <div class="hero__carousel-navigational-dot" id="dot-3"></div>
+                </div>
                 <div class="hero__carousel-slide-container" data-slides>
                     <div class="hero__carousel-slide" data-active>
                         <div class="hero__carousel-img">
                             <img src="assets/images/slide1.png" alt="slide-1" />
                         </div>
-                        <div class="hero__outter-text-container">
+                        <div class="hero__outter-text-container" id="text-container-slide-1">
                             <div class="hero__inner-text-container">
                                 <p class="hero__inner-product-mini-title">On Sale</p>
                                 <h2 class="hero__inner-product-title">Infant Fall Outfits</h2>
@@ -165,7 +170,7 @@
                         <div class="hero__carousel-img">
                             <img src="assets/images/slide2.png" alt="slide-2" />
                         </div>
-                        <div class="hero__outter-text-container">
+                        <div class="hero__outter-text-container" id="text-container-slide-2">
                             <div class="hero__inner-text-container">
                                 <p class="hero__inner-product-mini-title">Brand New</p>
                                 <h2 class="hero__inner-product-title">Baby Knit Outfits</h2>
@@ -185,7 +190,7 @@
                         <div class="hero__carousel-img">
                             <img src="assets/images/slide3.png" alt="slide-3" />
                         </div>
-                        <div class="hero__outter-text-container">
+                        <div class="hero__outter-text-container" id="text-container-slide-3">
                             <div class="hero__inner-text-container">
                                 <p class="hero__inner-product-mini-title">Cuddly Soft</p>
                                 <h2 class="hero__inner-product-title">Plush Stuffed Animals</h2>

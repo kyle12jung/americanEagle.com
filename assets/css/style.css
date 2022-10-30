@@ -626,37 +626,6 @@ header {
   position: relative;
 }
 
-.hero__arrow-left, .hero__arrow-right {
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
-  position: absolute;
-  z-index: 2;
-  width: 50px;
-  height: 75px;
-  background-color: #B8D1ED;
-  top: 40%;
-}
-
-.hero__arrow-left {
-  left: 2%
-}
-
-.hero__arrow-right {
-  transform: rotate(180deg);
-  right: 2%;
-}
-
-.hero__carousel button img {
-  filter: invert(100%);
-  width: 30px;
-  height: 40px;
-}
-
-.hero__arrow-left:hover, .hero__arrow-right:hover {
-  cursor: pointer;
-}
 
 .hero__carousel-slide-container {
 	position: relative;
@@ -667,11 +636,6 @@ header {
 	overflow: hidden;
   display: none;
   position: absolute;
-}
-
-.hero__carousel-slide[data-active] {
-  display: block;
-  z-index: 1;
 }
 
 .hero__carousel-img img {
@@ -760,6 +724,18 @@ header {
   text-decoration: underline;
 }
 
+.hero__arrow-left, .hero__arrow-right {
+  display: none;
+}
+
+
+/* @media (max-width: 1024px) {
+	.hero {
+		display: absolute;
+	}
+} */
+
+
 @media (min-width: 768px) {
 	.hero__carousel-img {
 		height: 400px;
@@ -773,7 +749,7 @@ header {
 @media (min-width: 1024px) {
 	.hero__carousel {
 		background-color: #ffffff;
-		background-image: url("../BB Assets/Leaf\ Pattern\ Tall.jpg");
+		background-image: url("../images/leafpatterntall.jpg");
 		min-height: 585px;
 	}
 
@@ -781,6 +757,71 @@ header {
 		position: relative;
 		min-height: 550px;
 	}
+
+  .hero__carousel-slide[data-active] {
+    display: block;
+    z-index: 1;
+  }
+
+  .hero__arrow-left, .hero__arrow-right {
+    display: block;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 75px;
+    background-color: #B8D1ED;
+    top: 40%;
+  }
+  
+  .hero__arrow-left {
+    left: 2%
+  }
+  
+  .hero__arrow-right {
+    transform: rotate(180deg);
+    right: 2%;
+  }
+
+  .hero__carousel-navigational-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    left: 50%;
+    bottom: 50px;
+  }
+  
+  .hero__carousel-navigational-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #FFCCCC;
+    border-radius: 50px;
+    margin-right: 12px;
+  }
+
+  .hero__carousel-navigational-dot[data-dot-active] {
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FFCCCC;
+  }
+  
+  .hero__carousel button img {
+    filter: invert(100%);
+    width: 30px;
+    height: 40px;
+  }
+  
+  .hero__arrow-left:hover, .hero__arrow-right:hover {
+    cursor: pointer;
+  }
+
 	.hero__carousel-img {
 		height: 550px;
 		overflow: hidden;
@@ -805,8 +846,16 @@ header {
 		margin: 0;
 		position: absolute;
 		top:0;
-		left: 20%;
 	}
+
+  #text-container-slide-1, #text-container-slide-3 {
+    left: 20%;
+  }
+
+  #text-container-slide-2 {
+    right: 8%;
+  }
+
 	.hero__product-title,
 	.hero__inner-product-title {
 	  font-size: 3.2rem;
@@ -814,6 +863,7 @@ header {
 	  text-align: center;
 	  padding-top: 15px;
 	}
+
 }
 
 /* 
