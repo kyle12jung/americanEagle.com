@@ -1647,10 +1647,6 @@ header {
   padding: 10px;
 }
 
-.footer__nav-minus-button {
-  display: none;
-}
-
 .footer__nav-list-svg-blue {
   background-color: #b8d1ed;
 }
@@ -1846,17 +1842,28 @@ header {
   .footer__nav-list-link-container {
     display: block;
   }
+  
+  .footer__nav-plus-button {
+    display: none;
+}
 
 }
 
 @media (max-width: 1024px) {
+
   .footer__nav-list-link-container {
     display: none;
+    margin-left: 20px;
   }
 
   .footer__nav-list-item-title-container {
     display: flex;
     align-items: center;
+    margin-left: 20px;
+  }
+
+  .footer__nav-list-item-contact-container {
+    margin-left: 20px;
   }
 
   .footer__nav-button-container {
