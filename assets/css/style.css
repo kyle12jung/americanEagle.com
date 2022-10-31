@@ -385,7 +385,7 @@ header {
 .navbar__search {
 	display: none;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .navbar__search-label {
@@ -748,6 +748,12 @@ header {
 
 .hero__arrow-left, .hero__arrow-right {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .hero__carousel {
+    z-index: 0;
+  }
 }
 
 

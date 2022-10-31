@@ -46,6 +46,7 @@ const searchButton = document.querySelector('.navbar__search-svg');
 const searchBar = document.querySelector('.navbar__search');
 searchButton.addEventListener('click', () => {
     searchBar.style.display = 'flex';
+    document.querySelector('.navbar__menu').style.zIndex = '20';
 })
 
 // mobile view footer expand/collapse fuctionality
